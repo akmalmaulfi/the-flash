@@ -1,0 +1,294 @@
+/* Display Flex */
+
+display-flex, .login-content {
+  display: flex;
+  display: -webkit-flex;
+}
+
+input, select, textarea {
+  outline: none;
+  appearance: unset !important;
+  -moz-appearance: unset !important;
+  -webkit-appearance: unset !important;
+  -o-appearance: unset !important;
+  -ms-appearance: unset !important;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  font-family: 'lemon/milk';
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+p{
+  font-size: 12px;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  color: #fff;
+  background: #353b43;
+  font-weight: 300;
+  margin: 0px;
+}
+
+.main {
+  padding: 105px 0;
+  position: relative; }
+
+.container {
+  width: 1150px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.login-content {
+  flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  background-color: #737f8a;
+  -webkit-box-shadow: 0px 10px 20px -2px rgba(0,0,0,0.8);
+  box-shadow: 0px 10px 20px -2px rgba(0,0,0,0.8);
+}
+
+.login {
+  width: 58.30%;
+}
+
+.login-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../img/background/bg3.jpg);
+  background-size: cover;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.4);
+  height: 100%;
+}
+
+.form {
+  width: 41.70%;
+  background: #292f36;
+}
+
+.signin {
+  width: 100%;
+  background: #ff5275;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.merah{
+  color: #ff5275;
+  text-decoration: none;
+}
+
+.signin:hover {
+  background: #fff;
+  color: #252525;
+}
+
+.signup {
+  color: #ff5275;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.signup:hover {
+  text-decoration: underline;
+}
+
+.cancel{
+  color: #ff5275;
+  font-size: 12px;
+  text-decoration: none;
+  float: right;
+}
+
+.active {
+  position: relative;
+  background: #ff5275;
+  padding: 14px 1px;
+  margin-right: 7px;
+  margin-left: 3px;
+  border-radius: 24px;
+  -moz-border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -o-border-radius: 24px;
+  -ms-border-radius: 24px;
+}
+
+.active:after {
+    position: absolute;
+    content: 'Person';
+    right: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    font-size: 11px;
+    color: #222;
+    font-weight: bold;
+  }
+
+.active input + label {
+    margin-right: 59px;
+  }
+
+form {
+  padding: 72px 70px 70px 70px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.form-input {
+  padding-top: 30px;
+}
+
+.form-label {
+  position: absolute;
+  transition: 0.25s ease;
+  -moz-transition: 0.25s ease;
+  -webkit-transition: 0.25s ease;
+  -o-transition: 0.25s ease;
+  -ms-transition: 0.25s ease;
+  color: #c4c4c4;
+  font-size: 15px;
+  left: 0;
+  top: 23px;
+}
+
+.form-submit{
+  display: block;
+  width: 100%;
+}
+
+input {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  padding-top: 10px;
+  -webkit-appearance: none;
+}
+
+input:focus + .form-label, input:valid + .form-label {
+    top: 1px;
+    font-size: 11px;
+    color: #ff5275;
+}
+
+input, select {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  border: none;
+  color: #fff;
+  background: transparent;
+  border-bottom: 1px solid #999;
+  padding: 4px 0;
+}
+
+input:focus, select:focus {
+    border-bottom: 1px solid #ff5275;
+}
+
+input::-webkit-input-placeholder {
+  color: #bebebe;
+}
+
+input::-moz-placeholder {
+  color: #bebebe;
+}
+
+input:-ms-input-placeholder {
+  color: #bebebe;
+}
+
+input:-moz-placeholder {
+  color: #bebebe;
+}
+
+/* Resolusi Tab */
+
+@media screen and (max-width: 1200px) {
+
+.container {
+  width: calc( 100% - 30px);
+  max-width: 100%;
+  background: transparent;
+}
+
+.login-content {
+  flex-direction: column;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -o-flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.login, .form {
+  width: 100%;
+}
+
+.login {
+    order: 2;
+    text-align: center;
+}
+
+.form {
+    order: 1;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+}
+
+/* Resolusi Android */
+
+@media screen and (max-width: 480px) {
+
+.active {
+    padding: 7px 1px;
+}
+
+form {
+    padding: 72px 40px 70px 40px;
+}
+}
+
